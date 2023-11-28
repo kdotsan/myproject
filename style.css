@@ -1,51 +1,110 @@
-/* General styles */
+/* Reset and general styles */
+/* (You can use a CSS reset to remove default styles) */
+
+/* Your CSS styles here */
+
+/* Example styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  background-color: #f7f7f7;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 15px 0;
-  text-align: center;
+  padding: 20px 0;
 }
 
-nav ul {
+.nav-links {
   list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-nav ul li {
-  display: inline;
+.nav-links li {
   margin-right: 20px;
 }
 
-nav ul li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-main {
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 30px;
-}
-
-/* Styling individual sections */
-#home {
-  background-color: #f4f4f4;
-  text-align: center;
+.section {
   padding: 50px 0;
+  text-align: center;
 }
 
-#about,
-#projects,
-#contact {
-  text-align: center;
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  border-radius: 50%;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 300px;
+  text-align: left;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.contact-info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons .icon:hover {
+  color: #ffcc00;
 }
 
 footer {
@@ -53,7 +112,4 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
